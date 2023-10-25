@@ -5,6 +5,7 @@ import CreateStudent from './components/CreateStudent';
 import StudentList from './components/StudentList.js';
 import Nav from './components/Nav';
 import EditStudent from './components/EditStudent';
+import Home from './components/home';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <HashRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<CreateStudent />} />
+          <Route path="/" element={<Home />} />
           <Route path="/create-student" element={<CreateStudent />} />
           <Route path="/student-list" element={<StudentList />} />
           <Route path ="/edit-student/:id" element={<EditStudent />} />
